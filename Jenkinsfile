@@ -33,14 +33,6 @@ pipeline {
             }
         }
 
-        stage('Testing AWS Configure') {
-            steps {
-                sh "aws configure set aws_access_key_id ${accesskey}"
-                sh "aws configure set aws_secret_access_key ${secsccesskey}"
-                sh "aws configure set default_region_name us-east-2"
-                sh "aws configure set default_output_type None"
-                sh 'aws sts get-caller-identity'
-            }
         }
         
         stage('Deploy using the deployment.yaml') {

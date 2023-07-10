@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Survey Form</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #0e0b0b53;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #c93b42;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+
+    }
+  </style>
+</head>
+<body>
+    <h1>Student Survey Form</h1>
+      <div class="form-group">
+        <label for="name">First Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Middle Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Last Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Address</label><br>
+        <input type="text" id="name" name="name" placeholder="House Address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">City</label><br>
+        <input type="text" id="name" name="name" placeholder="Name of your City" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">State</label><br>
+        <input type="text" id="name" name="name" placeholder="Name of your State" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">ZipCode</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your Zipcode" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Phone No:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your Phone Number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age" placeholder="Enter your age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Date of Survey">Date of Survey</label><br>
+        <input type="date" id="Date of Survey" name="Date of Survey">
+        <input type="SUBMIT">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-grp">
+        <label for="Interest">What made you gain interest in this University?</label>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Friends</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Telivision</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">Internet</label>
+        <input type="radio" id="Other" name="fav_language" value="Other">
+        <label for="Other">Other</label><br>
+      </div> 
+
+      <div class="form_grp">
+        <label for="Campus_Check box">What did you like most about your campus</label>
+        <input type="checkbox" id="students" name="students" value="Students">
+        <label for="students">Students</label>
+        <input type="checkbox" id="location" name="location" value="Location">
+        <label for="location">Location</label>
+        <input type="checkbox" id="campus" name="campus" value="Campus">
+        <label for="campus">Campus</label>
+        <input type="checkbox" id="atmosphere" name="atmosphere" value="Atmosphere">
+        <label for="atmosphere">Atmosphere</label>
+        <input type="checkbox" id="dorm rooms" name="dorm rooms" value="Dorm Rooms">
+        <label for="dorm rooms">Dorm Rooms</label>
+        <input type="checkbox" id="sports" name="sports" value="Sports">
+        <label for="sports">Sports</label><br>
+      </div>
+      <div class="form-group">
+        <label for="recommend">Would you recommend this University?</label><br>
+        <select id="recommend" name="recommend" required>
+          <option value="">Please select whether you would recommend this university?</option>
+          <option value="Very Likely">Very Likely</option>
+          <option value="Likely">Likely</option>
+          <option value="Unlikely">Unlikely</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Raffle">Please Enter 10 comma seperated values:</label>
+        <textarea id="Raffle" name="Raffle" placeholder="Enter comma seperated values between 1 and 100"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Give your Feedback"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="Cancel">Cancel</button>
+  </div>
+</body>
+</html>

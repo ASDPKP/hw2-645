@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployement
+metadata:
+  name: HW2-645-Deployement
+  labels:
+    app: hw2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hw2
+  template:
+    metadata:
+      labels:
+        app: hw2
+    spec:
+      containers:
+      - name: StudentSurvey-HW2
+        image: asdpkp/hw2-645-repo:myfinale
+        ports:
+        - containerPort: 80
+  

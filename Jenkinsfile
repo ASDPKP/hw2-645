@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Testing AWS Configure') {
             steps {
-                sh 'aws sts get-caller-identity'
+                sh 'kubectl get svc'
                 sh 'aws eks update-kubeconfig --region us-east-2 --name HW2-Cluster'
             }
         }

@@ -33,7 +33,6 @@ pipeline {
             }
         }
 
-        }
         
         stage('Deploy using the deployment.yaml') {
             steps {

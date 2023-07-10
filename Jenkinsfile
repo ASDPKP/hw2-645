@@ -1,12 +1,12 @@
-def accesskey = "AKIAWDDFPAHBRNA22YWF"
-def secaccesskey = "TKbpLbAorpy6otMPNOGDmtemV5G1GFoYQdIXajEd"
+def accesskey = "AKIASOV5WRTZITA6BUNP"
+def secaccesskey = "joNrZKuVjJNRPCu9aefJ5c6EGfO5GjnA8BAifK7v"
 def regioncode = "us-east-2"
 def outputtype = "None"
 def usrnme = "asdpkp"
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDS = credentials('docker-creds')
+        DOCKERHUB_CREDS = credentials('docker-user')
     }
     stages {
         stage('Check the repository out') {
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     dockerImage = docker.build('asdpkp/hw2')
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker-creds') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker-user') {
                         dockerImage.push('latest')
                     }
                 }

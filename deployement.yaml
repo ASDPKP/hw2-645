@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: HW2-645-Deployment
+  name: hw2645
   labels:
     app: hw2
 spec:

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: StudentSurvey-HW2
-        image: asdpkp/hw2-645-repo:myfinale
+        image: asdpkp/hw2-645-repo:latestfinale
         ports:
         - containerPort: 80
   
